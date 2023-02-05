@@ -8,15 +8,22 @@
 
 <body>
   <h1>About</h1>
-  <p><img src="/nn.svg?src=[about]->[this]"></p>
 
   <p>A <a href="https://www.nomnoml.com/">nomnoml</a> rendering service</p>
   <p>Include images in github readme files by passing nomnoml src to the parameter or as a gist.</p>
 
   <h2>Examples:</h2>
   <p>
+    Directly passing nomnoml source:
   <pre>&lt;img src="/nn.svg?src=[about]->[this]"&gt;</pre>
   </p>
+  <p><img src="/nn.svg?src=[about]->[this]"></p>
+
+  <p>
+    Indirectly passing public gist id:
+  <pre>&lt;img src="/nn.svg?gist=2c01551bc58cdca34c46cca43664d8f1"&gt;</pre>
+  </p>
+  <img src="/nn.svg?gist=2c01551bc58cdca34c46cca43664d8f1">
 </body>
 
 </html>
