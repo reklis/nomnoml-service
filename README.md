@@ -17,4 +17,4 @@ Hosted service:
 https://nomnoml-service.onrender.com/
 
 
-![Thanks](https://nomnoml-service.onrender.com/?src=[thank]->[you])
+![Thanks](https://nomnoml-service.onrender.com/nn.svg?src=[thank]->[you])
