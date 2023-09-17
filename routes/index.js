@@ -70,11 +70,11 @@ router.get('/nn.svg', async (req, res) => {
     } catch (ex) {
       console.error(ex)
 
-      res.status(400)
+      res.status(400).send()
     }
   }
 
-  res.status(404)
+  res.status(404).send()
 
 })
 
