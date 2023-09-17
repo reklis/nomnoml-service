@@ -59,12 +59,23 @@ router.get('/nn.svg', async (req, res) => {
 
   if (src) {
     console.log(src)
-    svg = nomnoml.renderSvg(src)
+
+    try {
+      svg = nomnoml.renderSvg(src)
+
+      res.status(200)
+        .header('Content-Type', 'image/svg+xml')
+        .send(svg)
+
+    } catch (ex) {
+      console.error(ex)
+
+      res.status(400)
+    }
   }
 
-  res.status(200)
-    .header('Content-Type', 'image/svg+xml')
-    .send(svg)
+  res.status(404)
+
 })
 
 module.exports = router;
